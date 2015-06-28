@@ -3,6 +3,7 @@
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("kvjkghcdtg/fd.gk.l,dfjg,jd.,kgnjf,.dngfdvjhgvjgh");
+        System.out.println("kvh");
+        System.out.println("kvhgfdkglkf;gkfd");
     }
 }
