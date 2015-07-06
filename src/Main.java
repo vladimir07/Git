@@ -6,7 +6,7 @@ public class Main {
         Window r = new Window("Окно!");//title
         r.setVisible(true);//видимость окна
         r.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Чтоб окно можно было закрыть
-        r.setSize(300,200);//размеры окна
+        r.setSize(300, 200);//размеры окна
         r.setResizable(false);//делает неизменными размеры окна
         r.setLocationRelativeTo(null);//позиционирует окно по центру
 
