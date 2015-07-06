@@ -1,5 +1,17 @@
+import javax.swing.JFrame;
+
 public class Main {
     public static void main(String[] args) {
+
+        Window r = new Window("Окно!");//title
+        r.setVisible(true);//видимость окна
+        r.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Чтоб окно можно было закрыть
+        r.setSize(300,200);//размеры окна
+        r.setResizable(false);//делает неизменными размеры окна
+        r.setLocationRelativeTo(null);//позиционирует окно по центру
+
+
+
         Sklad sklad = new Sklad(100, "Main Sklad", "Nikolaev", "Fedotov");
         Sklad skladMilk = new Sklad(10, "Молочный склад", "Nikolaev", "Ivanov");
         Sklad skladBeer = new Sklad(20, "Пивной склад", "Nikolaev", "Petrov");

@@ -20,10 +20,10 @@ public class Sklad {
 
     @Override
     public String toString() {
-        return "Наименование - '" + nameSklad + '\'' +
-                ", Площадь=" + squre +
-                ", расположение='" + adress + '\'' +
-                ", ответственный='" + mol + "\n";
+        return "РќР°РёРјРµРЅРѕРІР°РЅРёРµ - '" + nameSklad + '\'' +
+                ", РџР»РѕС‰Р°РґСЊ=" + squre +
+                ", СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ='" + adress + '\'' +
+                ", РѕС‚РІРµС‚СЃС‚РІРµРЅРЅС‹Р№='" + mol + "\n";
     }
 
     public boolean addSklad(Sklad sklad) {
@@ -50,9 +50,9 @@ public class Sklad {
     }
 
     public void reportSkladCategory(Category category) {
-        System.out.println("На " + nameSklad + " находится товар " + category + " в таком ассортименте");
+        System.out.println("РќР° " + nameSklad + " РЅР°С…РѕРґРёС‚СЃСЏ С‚РѕРІР°СЂ " + category + " РІ С‚Р°РєРѕРј Р°СЃСЃРѕСЂС‚РёРјРµРЅС‚Рµ");
         goods.stream().filter(temp -> category == temp.category).forEach(temp ->
-                System.out.println(" " + temp.name + " " + temp.syzeItem + "  " + temp.items + " на сумму -  " + (temp.items * temp.price) + " грн."));
+                System.out.println(" " + temp.name + " " + temp.syzeItem + "  " + temp.items + " РЅР° СЃСѓРјРјСѓ -  " + (temp.items * temp.price) + " РіСЂРЅ."));
         System.out.println();
     }
 
@@ -61,7 +61,7 @@ public class Sklad {
         for (Produckt temp : goods) {
             if (manufacture == temp.manufacture) {
                 suum += temp.price * temp.items;
-                System.out.println("На складе товара - " + temp.name + " от производителя - " + manufacture + " на сумму - " + suum + " грн.");
+                System.out.println("РќР° СЃРєР»Р°РґРµ С‚РѕРІР°СЂР° - " + temp.name + " РѕС‚ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ - " + manufacture + " РЅР° СЃСѓРјРјСѓ - " + suum + " РіСЂРЅ.");
                 System.out.println();
             }
         }
@@ -69,7 +69,7 @@ public class Sklad {
 
     public void reportSkladProdukt(String name) {
         goods.stream().filter(temp -> temp.name.equals(name)).forEach(temp ->
-                System.out.println(" " + temp.name + " " + temp.syzeItem + "  " + temp.items + " на сумму -  " + (temp.items * temp.price) + " грн.  Кладовщик " + mol));
+                System.out.println(" " + temp.name + " " + temp.syzeItem + "  " + temp.items + " РЅР° СЃСѓРјРјСѓ -  " + (temp.items * temp.price) + " РіСЂРЅ.  РљР»Р°РґРѕРІС‰РёРє " + mol));
         System.out.println();
 
     }
